@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="formConfig">
+		<fields name="copernicaParams" addfieldpath="plugins/system/rsfpcopernica/fields">
+			<field
+					type="spacer"
+					name="copernica.spacer01"
+					class="text"
+					label="PLG_RSFP_COPERNICA_INTRO"/>
+
+			<field name="co_form_active"
+				   type="radio"
+				   class="btn-group btn-group-yesno"
+				   description="PLG_RSFP_COPERNICA_INTEGRATION_DESCRIPTION"
+				   label="PLG_RSFP_COPERNICA_INTEGRATION_LABEL"
+				   default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field name="co_form_password"
+				   type="text"
+				   description="PLG_RSFP_COPERNICA_API_ACCESS_TOKEN_DESCRIPTION"
+				   label="PLG_RSFP_COPERNICA_API_ACCESS_TOKEN_LABEL"
+				   default=""
+				   class="input-xxlarge"
+				   showon="co_form_active:1"/>
+
+			<field name="co_form_list_id"
+				   type="copernica.databases"
+				   description="PLG_RSFP_COPERNICA_API_DATABASES_DESCRIPTION"
+				   label="PLG_RSFP_COPERNICA_API_DATABASES_LABEL"
+				   default=""
+				   class="advancedSelect"
+				   onchange="rsfpCopernica.rsfp_changeCoDatabases(this.value);"
+				   showon="co_form_active:1">
+			</field>
+
+			<field
+					type="spacer"
+					name="copernica.mapping_title"
+					class="text"
+					label="PLG_RSFP_COPERNICA_API_MAPPING_LABEL"
+					showon="co_form_active:1"/>
+
+			<field
+					type="spacer"
+					name="copernica.mapping_desc"
+					class="text"
+					label="PLG_RSFP_COPERNICA_MERGE_VARS_DESC"
+					showon="co_form_active:1"/>
+
+			<field
+					type="spacer"
+					name="copernica.mapping_error"
+					class="text"
+					label="PLG_RSFP_COPERNICA_MERGE_VARS_DESC"
+					showon="co_form_active:1"/>
+
+			<field
+					type="spacer"
+					name="copernica.mapping_error"
+					class="text"
+					label="PLG_RSFP_COPERNICA_MERGE_VARS_TABLE_HEADING_RSFORM_FIELD"
+					showon="co_form_active:1"/>
+		</fields>
+	</fieldset>
+</form>

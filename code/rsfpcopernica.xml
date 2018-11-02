@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" method="upgrade" group="system">
+	<name>System - RSForm! Pro Copernica</name>
+	<author>Perfect Web Team</author>
+	<creationDate>November 2018</creationDate>
+	<copyright>Copyright (C) 2018 Perfect Web Team. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>hallo@perfectwebteam.nl</authorEmail>
+	<authorUrl>https://perfectwebteam.nl</authorUrl>
+	<version>2.0.0</version>
+	<description>RSFP_COPERNICA_DESC</description>
+	<files>
+		<filename plugin="rsfpcopernica">rsfpcopernica.php</filename>
+		<filename>configuration.xml</filename>
+		<filename>rest.php</filename>
+		<folder>fields</folder>
+		<folder>language</folder>
+		<folder>tables</folder>
+		<folder>tmpl</folder>
+	</files>
+</extension>
