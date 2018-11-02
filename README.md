@@ -1,0 +1,1 @@
+# Copernica plugin for RSForm! Pro
